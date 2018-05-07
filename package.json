@@ -1,0 +1,26 @@
+{
+  "name": "node-push-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -x",
+    "start -f": "killall -9 node && nodemon -x",
+    "deploy": "git push heroku master",
+    "info": "heroku ps:scale web=1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "exponent-server-sdk": "^2.3.1",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "6.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
